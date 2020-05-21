@@ -1,5 +1,6 @@
 # DjangoWeb
-## 1.set up envirment
+## 1.Setting up uWSGI
+###set up envirment
 notice : when you can not install **python3-pip**<br>
 ``` shell
 $sudo add-apt-repository universe
@@ -51,3 +52,5 @@ if you can see successfully!,run it use uwsgi
 ```shell
 $ uwsgi --http :8000 --module mysite.wsgi
 ```
+if use uwsgi aslo see successfully and follow next step
+## 2.Basic nginx
