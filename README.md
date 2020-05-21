@@ -120,5 +120,5 @@ Restart nginx
 $ sudo /etc/init.d/nginx restart
 ```
 ----
-#reference document<br>
+# reference document<br>
 [uwsgi-docs](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
