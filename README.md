@@ -104,3 +104,21 @@ Symlink to this file from /etc/nginx/sites-enabled so nginx can see it:
 ```shell
 $ ln -s mysite_nginx.conf /etc/nginx/sites-enabled/
 ```
+### Deploying static files
+Before running nginx,you have to collect all Django static files in the static folder.<br>
+first of all we have to edit mysite/settings.py padding:
+```shell
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+```
+and then run 
+```shell
+$ python manage.py collectstatic
+```
+### Basic nginx test 
+Restart nginx
+```shell
+$ sudo /etc/init.d/nginx restart
+```
+----
+#reference document<br>
+[uwsgi-docs](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
