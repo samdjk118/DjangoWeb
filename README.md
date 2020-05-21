@@ -1,5 +1,5 @@
 # DjangoWeb
-This md is talk about how to setup django on nginx and with uwsgi
+This project is talk about how to setup django on nginx and with uwsgi
 ## 1.Setting up uWSGI
 ### set up envirment
 notice : when you can not install **python3-pip**<br>
