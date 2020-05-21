@@ -1,7 +1,7 @@
 # DjangoWeb
-notice : when you can not install python3-pip<br>
+## notice : when you can not install python3-pip
  $sudo add-apt-repository universe
-  3 #and then do
+#and then do
   4 $ apt-get update
   5 $ apt-get python3-pip
   6 #install and use virtualenv
