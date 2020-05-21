@@ -29,7 +29,7 @@ $ pip install uwsgi
 ```
 ### Basic test
 create a file to test uwsgi<br>
-test.py
+create test.py 
 ```python
 def application(env, response):
     start_response('200 OK',[('Content-Type':'text/html')])
@@ -46,4 +46,8 @@ $ curl http://127.0.0.1:8000
 ### Test Django Project
 ```shell
 $ python3 manage.py runserver 0.0.0.0:8000
+```
+if you can see successfully!,run it use uwsgi
+```shell
+$ uwsgi --http :8000 --module mysite.wsgi
 ```
