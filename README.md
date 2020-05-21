@@ -100,3 +100,7 @@ server {
     }
 }
 ```
+Symlink to this file from /etc/nginx/sites-enabled so nginx can see it:
+```shell
+$ ln -s mysite_nginx.conf /etc/nginx/sites-enabled/
+```
