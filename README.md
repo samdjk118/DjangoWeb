@@ -1,6 +1,6 @@
 # DjangoWeb
 ## notice : when you can not install `python3-pip`
- $sudo add-apt-repository universe
+`$sudo add-apt-repository universe`
 #and then do
   4 $ apt-get update
   5 $ apt-get python3-pip
