@@ -1,6 +1,6 @@
 # DjangoWeb
 ## set up envirment
-notice : when you can not install **python3-pip**
+notice : when you can not install **python3-pip**<br>
 ```$sudo add-apt-repository universe```
 and then do<br>
 `$ apt-get update`
