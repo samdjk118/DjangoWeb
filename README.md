@@ -1,6 +1,6 @@
 # DjangoWeb
 ## 1.Setting up uWSGI
-###set up envirment
+### set up envirment
 notice : when you can not install **python3-pip**<br>
 ``` shell
 $sudo add-apt-repository universe
