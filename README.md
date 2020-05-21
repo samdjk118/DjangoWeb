@@ -55,3 +55,9 @@ $ uwsgi --http :8000 --module mysite.wsgi
 ```
 if use uwsgi aslo see successfully and follow next step
 ## 2.Basic nginx
+### Install nginx
+```shell
+$ sudo apt-get install nginx
+$ sudo /etc/init.d/nginx start
+$ sudo systemctl enable nginx //the service will start auto 
+```
