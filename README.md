@@ -55,6 +55,11 @@ if you can see successfully!,run it use uwsgi
 ```shell
 $ uwsgi --http :8000 --module mysite.wsgi
 ```
+if receive Invalid HTTP_HOST header: '192.168.50.240:8000'. You may need to add '192.168.50.240' to ALLOWED_HOSTS.
+edit settings.py
+```
+ALLOWED_HOSTS = ['*']
+```
 if use uwsgi aslo see successfully and follow next step
 ### put uwsgi_params in your django project
 [uwsgi_params_example](https://github.com/samdjk118/DjangoWeb/blob/master/uwsgi_params)
@@ -106,7 +111,7 @@ server {
 ```
 Symlink to this file from /etc/nginx/sites-enabled so nginx can see it:
 ```shell
-$ ln -s mysite_nginx.conf /etc/nginx/sites-enabled/
+$ sudo ln -s /etc/nginx/sites-available/mysite_nginx.conf /etc/nginx/sites-enabled/
 ```
 ### Deploying static files
 Before running nginx,you have to collect all Django static files in the static folder.<br>
