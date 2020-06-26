@@ -39,7 +39,7 @@ def application(env, response):
 ``` 
 run uwsgi
 ```shell
-$ uwsgi --http :8000 --wsgi-file test.pt
+$ uwsgi --http :8000 --wsgi-file test.py
 ``` 
 in linux test
  ```shell
@@ -54,6 +54,8 @@ if you can see successfully!,run it use uwsgi
 $ uwsgi --http :8000 --module mysite.wsgi
 ```
 if use uwsgi aslo see successfully and follow next step
+### put uwsgi_params in your django project
+[uwsgi_params_example](https://github.com/samdjk118/DjangoWeb/blob/master/uwsgi_params)
 ## 2.Basic nginx
 ### Install nginx
 ```shell
@@ -124,6 +126,56 @@ and then go browser to check nginx<br>http://127.0.0.1<br>
 ```
 $ uwsgi --socket mysite.sock --module mysite.wsgi --chmod-socket=664
 ```
+check your broswer can connect to http://127.0.0.1:8000<br>
+else you can check log from /var/log/nginx/error.log
+### Configuring uWSGI to run with a .ini file
+```
+# mysite_uwsgi.ini file
+[uwsgi]
+
+# Django-related settings
+# the base directory (full path)
+chdir           = /path/to/your/project
+# Django's wsgi file
+module          = project.wsgi
+# the virtualenv (full path)
+home            = /path/to/virtualenv
+
+# process-related settings
+# master
+master          = true
+# maximum number of worker processes
+processes       = 10
+# the socket (use the full path to be safe
+socket          = /path/to/your/project/mysite.sock
+# ... with appropriate permissions - may be needed
+chmod-socket    = 666
+# clear environment on exit
+vacuum          = true
+```
+And run uwsgi using this file:
+```
+$ uwsgi --ini mysite_uwsgi.ini
+```
+also check your htttp://127.0.0.1:8000 can connect 
+### Install uWSGI system-wide
+Deactivate your virtualenv:
+```
+$ deactivate
+```
+and install uWSGI system-wide:
+```
+$ sudo pip install uwsgi
+
+# Or install LTS (long term support).
+$ pip install https://projects.unbit.it/downloads/uwsgi-lts.tar.gz
+```
+Check again that you can still run uWSGI just like you did before:
+```
+$ uwsgi --ini mysite_uwsgi.ini
+```
+## Emperor mode
+
 --- 
 # reference document<br>
 [uwsgi-docs](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
