@@ -1,4 +1,4 @@
-# DjangoWeb
+# DjangoWeb Deploy on nginx web server
 This project is talk about how to setup django on nginx and with uwsgi
 ## 1.Setting up uWSGI
 ### set up envirment
@@ -69,8 +69,8 @@ and paste this in it
 
 # the upstream component nginx needs to connect to
 upstream django {
-    # server unix:///path/to/your/mysite/mysite.sock; # for a file socket
-    server 127.0.0.1:8001; # for a web port socket (we'll use this first)
+    server unix:///path/to/your/mysite/mysite.sock; # for a file socket
+    # server 127.0.0.1:8001; # for a web port socket (we'll use this first)
 }
 
 # configuration of the server
@@ -119,6 +119,11 @@ Restart nginx
 ```shell
 $ sudo /etc/init.d/nginx restart
 ```
-----
+and then go browser to check nginx<br>http://127.0.0.1<br>
+### Running the Django application with uwsgi and nginx
+```
+$ uwsgi --socket mysite.sock --module mysite.wsgi --chmod-socket=664
+```
+--- 
 # reference document<br>
 [uwsgi-docs](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
