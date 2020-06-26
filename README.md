@@ -174,8 +174,41 @@ Check again that you can still run uWSGI just like you did before:
 ```
 $ uwsgi --ini mysite_uwsgi.ini
 ```
-## Emperor mode
+## 3.Emperor mode
+uWSGI can run in ‘emperor’ mode. In this mode it keeps an eye on a directory of uWSGI config files, and will spawn instances (‘vassals’) for each one it finds.<br>
+Whenever a config file is amended, the emperor will automatically restart the vassal.
+```
+create a directory for the vassals
+$ sudo mkdir -p /etc/uwsgi/vassals
+symlink from the default config directory to your config file
+$ sudo ln -s /path/to/your/mysite/mysite_uwsgi.ini /etc/uwsgi/vassals/
+give your user Permission to use www-data
+$ usermod www-data -aG your-user
+logout your account to make access usermod and login your account again
+run the emperor
+$ /path/to/VENV/bin/uwsgi --emperor /etc/uwsgi/vassals --uid user-name --gid user-name
+```
+check site.And it should be running.
+## Set startup uwsgi when system boots
+debain/ubuntu:<br>
+create a systemd system unit 
+/etc/systemd/system/uwsgi.service
+```
+Description=Django server by uWSGI
+After=syslog.target
 
+[Service]
+ExecStart=/path/to/VENV/bin/uwsgi --ini /etc/uwsgi/vassals/mysite.ini 
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
+```
+reboot your system to make sure it work!
 --- 
 # reference document<br>
 [uwsgi-docs](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
