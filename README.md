@@ -208,6 +208,11 @@ NotifyAccess=all
 [Install]
 WantedBy=multi-user.target
 ```
+Here it is set to restart automatically (when there is an error), and lead stderr to syslog.<br> Then, it is necessary to start the uwsgi.service service:
+```
+$ sudo systemctl enable uwsgi.service
+$ sudo systemctl status uwsgi.service
+```
 reboot your system to make sure it work!
 --- 
 # reference document<br>
