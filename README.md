@@ -34,7 +34,7 @@ create a file to test uwsgi<br>
 create test.py 
 ```python
 def application(env, response):
-    start_response('200 OK',[('Content-Type':'text/html')])
+    start_response('200 OK',[('Content-Type','text/html')])
     return [b"Hello World"]
 ``` 
 run uwsgi
