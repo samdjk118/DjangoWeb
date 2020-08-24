@@ -1,0 +1,2 @@
+# DjangoWeb
+about learning DjangoWeb
