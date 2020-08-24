@@ -24,7 +24,7 @@ jobs:
       - run:
           # 執行 django 的測試
           command: |
-            python manage.py test
+            python blog_project/blog/manage.py test
           name: Test
 
 # 告訴 CircleCI，我要執行的工作，
