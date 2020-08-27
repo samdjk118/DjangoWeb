@@ -32,7 +32,7 @@ jobs:
       - run:
           name: run mysql query
           command: |
-            sudo apt-get install mysql-client
+            sudo apt-cache search mysql-client
             mysql -h 127.0.0.1 -u blog -p blogpassword --execute="GRANT ALL PRIVILEGES ON blog* To 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword'"
       # 第二步
       - run:
