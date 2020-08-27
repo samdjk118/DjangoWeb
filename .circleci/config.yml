@@ -10,9 +10,19 @@ jobs:
       # `circleci/python` 的映像檔
       # 而且 tag 是要 3.8.1 的 tag
       - image: circleci/python:3.8.1
+      - image: circleci/mysql:8.0.12
+        environment:
+          MYSQL_DATABASE: blog
+          MYSQL_ROOT_HOST: "%"
+          MYSQL_USER: bloguser
+          MYSQL_PASSWORD: blogpassword
+        command: [--default-authentication-plugin=mysql_native_password]
     steps:
       # 第一步
       - checkout
+      - run:
+          command:
+            sudo service mysql start
       # 第二步
       - run:
           # 先安裝 django
