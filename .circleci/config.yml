@@ -1,0 +1,52 @@
+# CircleCI 的版本
+version: 2.1
+
+jobs:
+  # 把這個工作取名叫做 `build-and-test`
+  build-and-test:
+    # 告訴 circleci，我需要 docker 的環境
+    docker:
+      # 告訴 circleci，我要用 Docker Hub 上的
+      # `circleci/python` 的映像檔
+      # 而且 tag 是要 3.8.1 的 tag
+      - image: circleci/python:3.8.1
+      - image: circleci/mysql:8.0.4
+        environment:
+          MYSQL_DATABASE: blog
+          MYSQL_USER: bloguser
+          MYSQL_PASSWORD: blogpassword
+    steps:
+      # 第一步
+      - checkout
+      - run:
+      # Our primary container isn't MYSQL so run a sleep command until it's ready.
+          name: Waiting for MySQL to be ready
+          command: |
+            for i in `seq 1 10`;
+            do
+              nc -z 127.0.0.1 3306 && echo Success && exit 0
+              echo -n .
+              sleep 1
+            done
+            echo Failed waiting for MySQL && exit 1
+      # 第二步
+      - run:
+          # 先安裝 django
+          command: |
+            pip install django~=3.0.3
+            pip install PyMySQL
+          # 只是幫這個指令取名字而已
+          name: Install
+      # 第三步
+      #- run:
+          # 執行 django 的測試
+      #    command: |
+      #      python blog_project/blog/manage.py test
+      #    name: Test
+
+# 告訴 CircleCI，我要執行的工作，
+# 總共要執行 `build-and-test` 這一個工作
+workflows:
+  main:
+    jobs:
+      - build-and-test
