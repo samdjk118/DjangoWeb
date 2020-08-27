@@ -10,7 +10,7 @@ jobs:
       # `circleci/python` 的映像檔
       # 而且 tag 是要 3.8.1 的 tag
       - image: circleci/python:3.8.1
-      - image: circleci/mysql:5.7.1
+      - image: circleci/mysql:8.0.4
         environment:
           MYSQL_DATABASE: blog
           MYSQL_USER: bloguser
