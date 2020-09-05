@@ -1,11 +1,12 @@
 from populate import base
-from django.contrib.auth.models import User
+from account.models import User
 
 
 def populate():
     print("Creating admin account ...", end=' ')
     User.objects.all().delete()
-    User.objects.create_superuser(username='admin', password='admin', email='none')
+    User.objects.create_superuser(
+        username='admin', password='admin', email='none')
     print('done')
 
 
