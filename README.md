@@ -1,8 +1,9 @@
 # DjangoWeb
-## features
-  1. upload articles on blog page
-  2. admin can add,delete,update article
-  3. user can search article from field
-  4. only permit leave comment after login 
-  * To be completed
-  1. add css style
+## 網站
+  1. blog 
+     *  功能   
+        *  可以新增、刪除、修改文章
+        *  擁有後臺管理文章以及留言
+        *  使用者註冊後可以對文章新增留言以及按讚
+     *  待開發
+        *  外觀調整
