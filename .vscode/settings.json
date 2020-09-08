@@ -14,5 +14,5 @@
         "editor.detectIndentation": true,
         "editor.tabSize": 4
     },
-    "python.pythonPath": "C:\\Users\\Sam\\Anaconda3\\python.exe",
+    "python.pythonPath": "/usr/bin/python3",
 }
