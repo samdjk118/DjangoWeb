@@ -19,7 +19,8 @@ from main import views as main_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('article/', include('article.urls',namespace='article')),
-    path('main/', include('main.urls',namespace='main')),
+    path('account/', include('account.urls', namespace='account')),
+    path('article/', include('article.urls', namespace='article')),
+    path('main/', include('main.urls', namespace='main')),
     re_path('.*', main_views.main)
 ]

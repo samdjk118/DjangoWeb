@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>部落格</title>
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-</head>
-<body>
-    {% include 'main/menu.html' %}
-    <h2>Djagno Test Page</h2>
-</body>
-</html>
+{% extends 'main/base.html' %}
+{% block heading %}首頁{% endblock %}
+{% block content %}
+<p>This is blog index</p>
+{% endblock %}
