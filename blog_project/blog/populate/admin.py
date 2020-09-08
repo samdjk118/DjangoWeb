@@ -6,7 +6,7 @@ def populate():
     print("Creating admin account ...", end=' ')
     User.objects.all().delete()
     User.objects.create_superuser(
-        username='admin', password='admin', email='none')
+        username='admin', password='admin', email='none', fullName='管理者')
     print('done')
 
 

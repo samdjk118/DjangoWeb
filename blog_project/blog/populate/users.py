@@ -8,7 +8,7 @@ def populate():
     for i in range(5):
         username = 'user' + str(i)
         User.objects.create_superuser(
-            username=username, password=username, email=None)
+            username=username, password=username, email=None, fullName=username)
     print('done')
 
 
