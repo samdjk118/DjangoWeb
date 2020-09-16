@@ -13,10 +13,7 @@ class Article(models.Model):
     title = models.CharField(max_length=128, unique=True)
     content = models.TextField()
     pubDateTime = models.DateTimeField(auto_now_add=True)
-<<<<<<< HEAD
-=======
     likes = models.ManyToManyField(User)
->>>>>>> 20200908
 
     def __str__(self):
         return self.title
