@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04cc1c14-24eb-4178-b47f-f8e6fc7194dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1VhMVIe000GIfXy9jVLOOQZQ9lp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sam\Desktop\性別與年齡\Sex_age_image\static\images" />
+      <recent name="C:\Users\Sam\Desktop\性別與年齡\Sex_age_image\Sex_Age\templates\Sex_Age" />
+      <recent name="C:\Users\Sam\Desktop\性別與年齡\Sex_age_image\Sex_Age\templates" />
+      <recent name="C:\Users\Sam\Desktop\性別與年齡\Sex_age_image\Sex_Age\templates\Sex_age_image" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Sex_age_image" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Sex_age_image" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Sex_age_image.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04cc1c14-24eb-4178-b47f-f8e6fc7194dd" name="Default Changelist" comment="" />
+      <created>1577700895302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577700895302</updated>
+      <workItem from="1577700897502" duration="5924000" />
+      <workItem from="1578231265835" duration="770000" />
+      <workItem from="1578238517360" duration="2567000" />
+      <workItem from="1578241455008" duration="1802000" />
+      <workItem from="1578243361330" duration="9599000" />
+      <workItem from="1578392768731" duration="1760000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="494" y="182" key="FileChooserDialogImpl" timestamp="1578360444049">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="494" y="182" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1578360444049" />
+    <state x="648" y="270" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1578310178009" />
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578248833723" />
+    <state width="1397" height="133" key="GridCell.Tab.0.bottom" timestamp="1578361357371">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="133" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1578361357371" />
+    <state width="1637" height="222" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1578310514152" />
+    <state width="1877" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578248082709" />
+    <state width="1397" height="133" key="GridCell.Tab.0.center" timestamp="1578361357371">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="133" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1578361357371" />
+    <state width="1637" height="222" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1578310514152" />
+    <state width="1877" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578248082709" />
+    <state width="1397" height="133" key="GridCell.Tab.0.left" timestamp="1578361357371">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="133" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1578361357371" />
+    <state width="1637" height="222" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1578310514152" />
+    <state width="1877" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578248082708" />
+    <state width="1397" height="133" key="GridCell.Tab.0.right" timestamp="1578361357371">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1397" height="133" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1578361357371" />
+    <state width="1637" height="222" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1578310514152" />
+    <state width="1877" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578248082709" />
+    <state x="659" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1578243361490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578243361490" />
+  </component>
+</project>
