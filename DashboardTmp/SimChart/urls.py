@@ -3,6 +3,6 @@ from SimChart import views
 
 
 app_name = 'SimChart'
-urlpatterns=[
-    path('',views.chart,name='chart'),
+urlpatterns = [
+    path('', views.chart, name='Simchart'),
 ]

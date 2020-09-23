@@ -17,5 +17,9 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 
 urlpatterns = [
-    path('simchart/', include('SimChart.urls',namespace='SimChart')),
+    path('simchart/', include('SimChart.urls', namespace='SimChart')),
+    path('TimeAxis/', include('TimeAxis.urls', namespace='TimeAxis')),
+    path('PieChart/', include('PieChart.urls', namespace='PieChart')),
+    path('WorldMap/', include('WorldMap.urls', namespace='WorldMap')),
+    path('AngularGauge/', include('AngularGauge.urls', namespace='AngularGauge')),
 ]
