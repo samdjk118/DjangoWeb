@@ -62,7 +62,7 @@ ALLOWED_HOSTS = ['*']
 ```
 if use uwsgi aslo see successfully and follow next step
 ### put uwsgi_params in your django project
-[uwsgi_params_example](https://github.com/samdjk118/DjangoWeb/blob/master/uwsgi_params)
+[uwsgi_params_example](https://github.com/samdjk118/DjangoWeb/blob/master/uwsgi/uwsgi_params)
 ## 2.Basic nginx
 ### Install nginx
 ```shell
