@@ -78,8 +78,8 @@ and paste this in it
 
 # the upstream component nginx needs to connect to
 upstream django {
-    # server unix:///path/to/your/mysite/mysite.sock; # for a file socket
-    server 127.0.0.1:8001; # for a web port socket (we'll use this first)
+    server unix:///path/to/your/mysite/mysite.sock; # for a file socket
+    # server 127.0.0.1:8001; # for a web port socket (we'll use this first)
 }
 
 # configuration of the server
