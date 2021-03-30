@@ -193,6 +193,7 @@ give your user Permission to use www-data
 $ usermod www-data -aG your-user
 logout your account to make access usermod and login your account again
 run the emperor
+# you can use type -a uwsgi find folder location
 $ /path/to/VENV/bin/uwsgi --emperor /etc/uwsgi/vassals --uid user-name --gid user-name
 ```
 check site.And it should be running.
